@@ -1,0 +1,8 @@
+<h1>Liste des candidats</h1>
+<p *ngFor="let t of tabCandidats;">
+    <img [src]="t.image"> Nom:{{t.nom}}
+    <input type="checkbox" [checked]="t.parti==false" disabled>Indépendant NB Followers:
+     {{t.nb}}
+     <button (click)="aug(t)">Follow</button>
+
+</p>

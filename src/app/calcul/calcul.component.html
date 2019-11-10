@@ -1,0 +1,10 @@
+
+<h1>Opération de calcul</h1>
+<p>Donnez un premier nombre</p><input class="c1"  type="text" name="t1" #t1 (keyup)="onKeyUp($event)" (mouseout)="check(t1.value,t2.value)"  />
+<p>Le carré est:{{carre}}</p> 
+<p>Donnez un deuxième nombre</p><input class="c1"   type="text" name="t2" #t2 (mouseout)="check(t1.value,t2.value)"/>
+<button (click)="onClick(t1.value,t2.value)"  [disabled]="test">Somme</button>
+<p>Somme:{{somme}}</p>
+
+
+
